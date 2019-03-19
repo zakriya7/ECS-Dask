@@ -216,13 +216,13 @@ Resources:
     Properties:
       GroupDescription: 'Enable Scheduler ports access '
       GroupName: dask-sg
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: '8786'
-          ToPort: '8789'
-          SourceSecurityGroupName: dask-sg
-        - IpProtocol: tcp
-          FromPort: '9000'
-          ToPort: '9002'
-          SourceSecurityGroupName: dask-sg
+      #SecurityGroupIngress:
+        #- IpProtocol: tcp
+          #FromPort: '8786'
+          #ToPort: '8789'
+         # SourceSecurityGroupName: dask-sg
+       # - IpProtocol: tcp
+          #FromPort: '9000'
+          #ToPort: '9002'
+          #SourceSecurityGroupName: dask-sg
       VpcId: !Ref VpcId
